@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(127, 127, 177);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+}
+/* ...ELEMENTS... */
+
+/* element selector, applies to all that is underneath */
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:40px;
+    text-align:center;
+    text-decoration: underline;
+}
+
+
+h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(75, 50, 90);
+    width:max-content;
+    font-size:25px;
+}
+
+h4 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(75, 50, 90);
+    width:max-content;
+    text-align:center;
+}
+
+/* ...NAV...*/
+
+/* class selector for the navigation bar-applies to only the 3 navigation bars */
+
+.navbar {
+    background-color:rgb(82, 33, 108);
+    padding: 0.25em;
+
+}
+
+/* definiing a style within a style with a pseudo class */
+/* sizing of screen may vary, one line or two? w/ nowrap it keeps images on one line */
+/* justify-content:flex-start will justify flwex items to the right */
+.navbar ol {
+    display:flex;
+    list-style-type:none;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+
+}
+
+/* pseduoclass allows you to define styles of something hovered over, hover defines the style of the hover and active allows it to stay that way when hovered over */
+.navbar a {
+    color:white;
+    text-decoration:none;
+    font-size: 20px;
+    margin-right:2em;
+    box-shadow: 2px white;
+}
+
+.navbar a:hover {
+    color:teal;
+}
+
+.navbar a:active {
+    color: teal;
+}
+
+/* ...IMAGE LIST INDEX... */
+
+/* targeting just this area of my website and the 3 items listed with an id selector */
+/* flex for different devices, flex-wrap:nowrap keeps images on one line
+ */
+#favorite-things {
+    list-style-type:none;
+    display: flex;
+    justify-content: center;
+    flex-wrap:nowrap;
+}
+
+#favorite-things li {
+    list-style-type:none;
+    display: flex;
+    justify-content: center;
+    flex-wrap:nowrap;
+}
+
+/* ...TABLE... */
+table {
+    background-color: rgb(82, 33, 108);
+    border:3px dotted black;
+}
+
+thead {
+    background-color: rgb(120, 92, 137);
+    font-size:15px;
+}
+
+th, tr {
+    text-indent:5px;
+}
+
+/* ...FORM.. */
+
+/* global element selector */
+form {
+    display:flex;
+    flex-direction:column;
+    max-width:30vw;
+    padding: 2em;
+}
+
+form label {
+    font-size:larger;
+    text-align:center;
+}
+
+form button {
+    padding:1rem;
+}
